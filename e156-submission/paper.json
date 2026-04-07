@@ -1,21 +1,61 @@
 {
-  "title": "EvidenceSpectral: Spectral Analysis of Meta-Analytic Heterogeneity Patterns",
+  "title": "Untitled E156",
   "slug": "evidencespectral",
-  "date": "2026-04-07",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-26",
+  "body": "",
+  "word_count": 0,
+  "sentence_count": 0,
+  "sentences": [],
+  "notes": {
+    "code": "https://github.com/mahmood726-cyber/evidencespectral"
+  },
   "type": "methods",
-  "primary_estimand": "Spectral decomposition of between-study variance",
-  "certainty": "",
-  "summary": "Meta-analysis datasets for frequency-domain heterogeneity analysis",
-  "body": "Can spectral decomposition of study-level effects reveal periodic or structured patterns in meta-analytic heterogeneity that standard statistics miss? We built a 551-line dashboard applying discrete Fourier transform to chronologically ordered study effects to detect temporal periodicity, trend components, and noise structure in the between-study variance. The tool computes power spectral density, identifies dominant frequencies, and decomposes total heterogeneity into trend, periodic, and random components. Spectral analysis detected significant periodic components in 12 percent of tested meta-analyses (95% CI 8 to 17), suggesting temporal patterns in treatment effects related to changes in clinical practice or patient populations. The trend component accounted for more than 30 percent of total heterogeneity in 23 percent of meta-analyses, indicating systematic temporal drift in treatment effects. Spectral heterogeneity analysis could alert meta-analysts to non-stationary evidence patterns where pooling assumes exchangeability that may not hold temporally. The method requires chronological ordering and at least 20 studies for reliable spectral estimation.",
-  "sentences": [
-    "Can spectral decomposition of study-level effects reveal periodic or structured patterns in meta-analytic heterogeneity that standard statistics miss?",
-    "We built a 551-line dashboard applying discrete Fourier transform to chronologically ordered study effects to detect temporal periodicity, trend components, and noise structure in the between-study variance.",
-    "The tool computes power spectral density, identifies dominant frequencies, and decomposes total heterogeneity into trend, periodic, and random components.",
-    "Spectral analysis detected significant periodic components in 12 percent of tested meta-analyses (95% CI 8 to 17), suggesting temporal patterns in treatment effects related to changes in clinical practice or patient populations.",
-    "The trend component accounted for more than 30 percent of total heterogeneity in 23 percent of meta-analyses, indicating systematic temporal drift in treatment effects.",
-    "Spectral heterogeneity analysis could alert meta-analysts to non-stationary evidence patterns where pooling assumes exchangeability that may not hold temporally.",
-    "The method requires chronological ordering and at least 20 studies for reliable spectral estimation."
-  ],
-  "study_count": "",
-  "participant_count": ""
+  "primary_estimand": "",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": false,
+        "detail": "Found 0 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 0 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": false,
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": false,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": false,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
 }
