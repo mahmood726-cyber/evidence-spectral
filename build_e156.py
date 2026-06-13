@@ -9,7 +9,8 @@ import sys
 import io
 from pathlib import Path
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+if "pytest" not in sys.modules:
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 TEMPLATE_PATH = Path(r"C:\E156\templates\e156_interactive_template.html")
 PAPER_JSON    = Path(r"C:\Models\EvidenceSpectral\e156-submission\paper.json")
